@@ -3,22 +3,71 @@
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: coral;
+}
+
 body{
+    background-color: black;
     background-image: url("../images/pizza_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    background-color:black;
+    font-weight:600;
+}
+
+.nav > *{
+    width: 40%;
+}
+
+.nav img{
+    width: 2.2%;
+}
+
+.nav a{
+    color: coral;
+    padding-left: 1%;
 }
 
 .option_bar{
     display: flex;
     flex-direction: row; 
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 1%;
-    background-color: black;
+.option_bar a{
+    text-align: center;
+    margin-right: 2%;
 }
+
+.nav_form input{
+    background-color:rgb(63, 33, 21);
+    color: white;
+
+}
+
+.nav_form button{
+    background-color: black;
+    color: coral;
+    font-weight: 600;
+}
+
+/* Body */
 
 .title{
     display: flex;
@@ -29,10 +78,91 @@ body{
 
 .title h1{
     font-size: 500%;
+    margin-bottom: 0;
     background-color:black;
     color: coral;
 }
 
 .title h5{
-    background-color:black;    
+    background-color:black;  
+}
+
+main a{
+    background-color:black;
+    text-align: center;
+    border: solid black 1px;
+    margin-left:44%;
+    margin-right: 44%;
+    padding-top: .8%;
+    padding-bottom: .8%;
+    color:white;
+    font-size: 200%;
+    font-weight: 600;
+    border: solid 1px white;
+    margin-top: 18%;
+}
+
+main a:hover{
+    border: coral solid 1px;
+}
+
+/* form login*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15%;
+    margin-left: 43.8%;
+    margin-right: 43.8%;
+    color: coral;
+}
+
+.form label{
+    text-align: center;
+    background-color: black;
+}
+
+.form button{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: black;
+    color: coral;
+}
+
+/* form register */
+
+.reg_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    margin-left: 43.8%;
+    margin-right: 43.8%;
+}
+
+.reg_form label{
+    width: 100%;
+    background-color: black;
+    color: coral;
+    text-align: center;
+}
+
+.reg_form input{
+    width: 100%;
+    text-align: center;
+}
+
+.reg_form button{
+    background-color: black;
+    color: coral;
+}
+
+/* form success */
+
+.form h3{
+    width: 100%;
+    text-align: center;
+    background-color: black;
 }
